@@ -22,7 +22,7 @@
 
 <br>
 
-[🌐 **Lihat Demo**](https://GANTI-DENGAN-LINK-DEMO) &nbsp;•&nbsp; [💻 **Repository**](https://github.com/fatimaazzahra10028-arch/salatiga-student-hub) &nbsp;•&nbsp; [🏛️ **Situs Resmi UIN Salatiga**](https://uinsalatiga.ac.id/)
+[🌐 **Lihat Demo**](salatiga-student-hub.netlify.app) &nbsp;•&nbsp; [💻 **Repository**](https://github.com/fatimaazzahra10028-arch/salatiga-student-hub) &nbsp;•&nbsp; [🏛️ **Situs Resmi UIN Salatiga**](https://uinsalatiga.ac.id/)
 
 </div>
 
