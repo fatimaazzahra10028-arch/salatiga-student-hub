@@ -1,0 +1,159 @@
+<nav class="sticky top-0 z-50 w-full glassmorphism border-b border-slate-200/80 dark:border-slate-800/80 shadow-sm transition-all duration-300 bg-white/85 dark:bg-slate-900/85 backdrop-blur-md">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-16 sm:h-20 gap-4">
+            
+            <!-- 1. BRAND LOGO & TITLE -->
+            <div class="flex items-center gap-2 sm:gap-3 shrink-0">
+                <div class="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-gradient-to-tr from-emerald-600 to-teal-400 flex items-center justify-center text-white text-lg sm:text-xl font-bold shadow-lg shadow-emerald-500/30">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                </div>
+                <div>
+                    <a href="#hero" class="text-base sm:text-lg xl:text-xl font-extrabold tracking-tight text-slate-900 dark:text-white whitespace-nowrap hover:opacity-90 transition-opacity">
+                        Salatiga<span class="text-emerald-500">StudentHub</span>
+                    </a>
+                    <span class="block text-[9px] sm:text-[10px] font-semibold uppercase tracking-wider text-emerald-600 dark:text-emerald-400">Panduan Maba UIN Salatiga</span>
+                </div>
+            </div>
+
+            <!-- 2. DESKTOP NAVIGATION DROPDOWN MENU (Tampil Aktif di Laptop/Desktop >= 1024px) -->
+            <div class="hidden lg:flex items-center gap-6 text-xs xl:text-sm font-bold text-slate-700 dark:text-slate-200" id="desktopNavLinks">
+                
+                <!-- Menu 1: Beranda -->
+                <a href="#hero" class="nav-link py-2 hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors whitespace-nowrap">
+                    Beranda
+                </a>
+
+                <!-- Menu 2: Akademik Dropdown -->
+                <div class="relative group py-2 cursor-pointer">
+                    <button class="flex items-center gap-1.5 hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors focus:outline-none">
+                        <span>Akademik</span>
+                        <i class="fa-solid fa-chevron-down text-[10px] opacity-70 group-hover:rotate-180 transition-transform duration-300"></i>
+                    </button>
+                    <!-- Submenu Dropdown -->
+                    <div class="absolute left-0 top-full pt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform translate-y-1 group-hover:translate-y-0 w-52">
+                        <div class="p-2 rounded-2xl bg-white dark:bg-slate-800 border border-slate-200/80 dark:border-slate-700/80 shadow-xl backdrop-blur-lg space-y-1">
+                            <a href="#alur" class="flex items-center gap-2.5 px-3 py-2 rounded-xl text-xs hover:bg-emerald-50 dark:hover:bg-slate-700/60 hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors">
+                                <i class="fa-solid fa-list-check text-emerald-500 w-4 text-center"></i>
+                                <span>Alur Maba</span>
+                            </a>
+                            <a href="#fakultas" class="flex items-center gap-2.5 px-3 py-2 rounded-xl text-xs hover:bg-emerald-50 dark:hover:bg-slate-700/60 hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors">
+                                <i class="fa-solid fa-building-columns text-emerald-500 w-4 text-center"></i>
+                                <span>Fakultas &amp; Prodi</span>
+                            </a>
+                            <a href="#ukt-beasiswa" class="flex items-center gap-2.5 px-3 py-2 rounded-xl text-xs hover:bg-emerald-50 dark:hover:bg-slate-700/60 hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors">
+                                <i class="fa-solid fa-wallet text-emerald-500 w-4 text-center"></i>
+                                <span>UKT &amp; Beasiswa</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Menu 3: Kampus & Kota Dropdown -->
+                <div class="relative group py-2 cursor-pointer">
+                    <button class="flex items-center gap-1.5 hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors focus:outline-none">
+                        <span>Kampus &amp; Kota</span>
+                        <i class="fa-solid fa-chevron-down text-[10px] opacity-70 group-hover:rotate-180 transition-transform duration-300"></i>
+                    </button>
+                    <!-- Submenu Dropdown -->
+                    <div class="absolute left-0 top-full pt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform translate-y-1 group-hover:translate-y-0 w-52">
+                        <div class="p-2 rounded-2xl bg-white dark:bg-slate-800 border border-slate-200/80 dark:border-slate-700/80 shadow-xl backdrop-blur-lg space-y-1">
+                            <a href="#campus-map" class="flex items-center gap-2.5 px-3 py-2 rounded-xl text-xs hover:bg-emerald-50 dark:hover:bg-slate-700/60 hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors">
+                                <i class="fa-solid fa-map-location-dot text-emerald-500 w-4 text-center"></i>
+                                <span>Peta Kampus</span>
+                            </a>
+                            <a href="#directory" class="flex items-center gap-2.5 px-3 py-2 rounded-xl text-xs hover:bg-emerald-50 dark:hover:bg-slate-700/60 hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors">
+                                <i class="fa-solid fa-compass text-emerald-500 w-4 text-center"></i>
+                                <span>Hidup di Salatiga</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Menu 4: Informasi Dropdown -->
+                <div class="relative group py-2 cursor-pointer">
+                    <button class="flex items-center gap-1.5 hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors focus:outline-none">
+                        <span>Informasi</span>
+                        <i class="fa-solid fa-chevron-down text-[10px] opacity-70 group-hover:rotate-180 transition-transform duration-300"></i>
+                    </button>
+                    <!-- Submenu Dropdown -->
+                    <div class="absolute right-0 top-full pt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform translate-y-1 group-hover:translate-y-0 w-52">
+                        <div class="p-2 rounded-2xl bg-white dark:bg-slate-800 border border-slate-200/80 dark:border-slate-700/80 shadow-xl backdrop-blur-lg space-y-1">
+                            <a href="#about" class="flex items-center gap-2.5 px-3 py-2 rounded-xl text-xs hover:bg-emerald-50 dark:hover:bg-slate-700/60 hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors">
+                                <i class="fa-solid fa-circle-info text-emerald-500 w-4 text-center"></i>
+                                <span>Tentang Website</span>
+                            </a>
+                            <a href="#faq" class="flex items-center gap-2.5 px-3 py-2 rounded-xl text-xs hover:bg-emerald-50 dark:hover:bg-slate-700/60 hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors">
+                                <i class="fa-solid fa-circle-question text-emerald-500 w-4 text-center"></i>
+                                <span>FAQ</span>
+                            </a>
+                            <a href="#contact" class="flex items-center gap-2.5 px-3 py-2 rounded-xl text-xs hover:bg-emerald-50 dark:hover:bg-slate-700/60 hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors">
+                                <i class="fa-solid fa-headset text-emerald-500 w-4 text-center"></i>
+                                <span>Kontak Penting</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- 3. ACTION BUTTONS (Bookmark, Theme Toggle, Mobile Menu) -->
+            <div class="flex items-center space-x-1.5 sm:space-x-2.5 shrink-0">
+                <button id="bookmarkToggleBtn" aria-label="Simpanan Saya" class="relative p-2 sm:p-2.5 rounded-xl bg-slate-100/80 dark:bg-slate-800/80 text-slate-700 dark:text-slate-200 hover:bg-emerald-500 hover:text-white dark:hover:bg-emerald-600 transition-all backdrop-blur-md" title="Simpanan Saya">
+                    <i class="fa-solid fa-bookmark text-base sm:text-lg"></i>
+                    <span id="bookmarkBadge" class="hidden absolute -top-1 -right-1 bg-emerald-500 text-white text-[10px] font-bold w-5 h-5 rounded-full flex items-center justify-center border-2 border-white dark:border-slate-900 shadow-sm">0</span>
+                </button>
+                
+                <button id="themeToggleBtn" aria-label="Ubah mode tampilan" class="p-2 sm:p-2.5 rounded-xl bg-slate-100/80 dark:bg-slate-800/80 text-slate-700 dark:text-slate-200 hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors backdrop-blur-md" title="Ubah Mode Tampilan">
+                    <i id="themeIcon" class="fa-solid fa-moon text-base sm:text-lg"></i>
+                </button>
+
+                <!-- Tombol Hamburger (Mobile & iPad < 1024px) -->
+                <button id="mobileMenuBtn" aria-label="Buka menu navigasi" aria-expanded="false" class="lg:hidden p-2 sm:p-2.5 rounded-xl bg-slate-100/80 dark:bg-slate-800/80 text-slate-700 dark:text-slate-200 hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors backdrop-blur-md">
+                    <i class="fa-solid fa-bars text-base sm:text-lg"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 4. MOBILE & TABLET DROPDOWN MENU (Aktif di layar < 1024px) -->
+    <div id="mobileMenu" class="hidden lg:hidden border-t border-slate-200/80 dark:border-slate-800/80 bg-white/95 dark:bg-slate-900/95 backdrop-blur-md transition-all max-h-[calc(100vh-5rem)] overflow-y-auto">
+        <div class="px-4 pt-3 pb-6 space-y-1 font-semibold text-slate-700 dark:text-slate-200 text-xs sm:text-sm" id="mobileNavLinks">
+            <a href="#hero" class="mobile-nav-link block py-2.5 px-3 rounded-xl hover:bg-emerald-50 dark:hover:bg-slate-800 hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors flex items-center gap-2.5">
+                <i class="fa-solid fa-house text-emerald-500 w-5 text-center"></i>
+                <span>Beranda</span>
+            </a>
+            <a href="#alur" class="mobile-nav-link block py-2.5 px-3 rounded-xl hover:bg-emerald-50 dark:hover:bg-slate-800 hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors flex items-center gap-2.5">
+                <i class="fa-solid fa-list-check text-emerald-500 w-5 text-center"></i>
+                <span>Alur Maba</span>
+            </a>
+            <a href="#fakultas" class="mobile-nav-link block py-2.5 px-3 rounded-xl hover:bg-emerald-50 dark:hover:bg-slate-800 hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors flex items-center gap-2.5">
+                <i class="fa-solid fa-building-columns text-emerald-500 w-5 text-center"></i>
+                <span>Fakultas &amp; Prodi</span>
+            </a>
+            <a href="#campus-map" class="mobile-nav-link block py-2.5 px-3 rounded-xl hover:bg-emerald-50 dark:hover:bg-slate-800 hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors flex items-center gap-2.5">
+                <i class="fa-solid fa-map-location-dot text-emerald-500 w-5 text-center"></i>
+                <span>Peta Kampus</span>
+            </a>
+            <a href="#ukt-beasiswa" class="mobile-nav-link block py-2.5 px-3 rounded-xl hover:bg-emerald-50 dark:hover:bg-slate-800 hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors flex items-center gap-2.5">
+                <i class="fa-solid fa-wallet text-emerald-500 w-5 text-center"></i>
+                <span>UKT &amp; Beasiswa</span>
+            </a>
+            <a href="#directory" class="mobile-nav-link block py-2.5 px-3 rounded-xl hover:bg-emerald-50 dark:hover:bg-slate-800 hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors flex items-center gap-2.5">
+                <i class="fa-solid fa-compass text-emerald-500 w-5 text-center"></i>
+                <span>Hidup di Salatiga</span>
+            </a>
+            <a href="#about" class="mobile-nav-link block py-2.5 px-3 rounded-xl hover:bg-emerald-50 dark:hover:bg-slate-800 hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors flex items-center gap-2.5">
+                <i class="fa-solid fa-circle-info text-emerald-500 w-5 text-center"></i>
+                <span>Tentang Website</span>
+            </a>
+            <a href="#faq" class="mobile-nav-link block py-2.5 px-3 rounded-xl hover:bg-emerald-50 dark:hover:bg-slate-800 hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors flex items-center gap-2.5">
+                <i class="fa-solid fa-circle-question text-emerald-500 w-5 text-center"></i>
+                <span>FAQ</span>
+            </a>
+            <a href="#contact" class="mobile-nav-link block py-2.5 px-3 rounded-xl hover:bg-emerald-50 dark:hover:bg-slate-800 hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors flex items-center gap-2.5">
+                <i class="fa-solid fa-headset text-emerald-500 w-5 text-center"></i>
+                <span>Kontak Penting</span>
+            </a>
+        </div>
+    </div>
+</nav>

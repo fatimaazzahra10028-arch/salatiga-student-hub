@@ -1,0 +1,78 @@
+<section id="campus-map" class="py-12 sm:py-16 border-t border-slate-200/80 dark:border-slate-800/80 relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        
+        <!-- Header Seksi -->
+        <div class="text-center max-w-2xl mx-auto mb-8 sm:mb-12" data-aos="fade-up" data-aos-duration="700">
+            <span class="text-xs font-bold uppercase tracking-wider text-emerald-600 dark:text-emerald-400">Navigasi Peta Interaktif</span>
+            <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 dark:text-white mt-1">Lokasi Kampus UIN Salatiga</h2>
+            <p class="text-slate-500 dark:text-slate-400 text-xs sm:text-sm mt-2">Pilih lokasi kampus di bawah ini untuk melihat navigasi peta secara langsung.</p>
+        </div>
+
+        <!-- MOBILE ONLY: Tab Pills Selector (Warna Kontras & Terbaca Jelas) -->
+        <div class="lg:hidden flex items-center gap-2 overflow-x-auto pb-3 mb-4 no-scrollbar" data-aos="fade-down" data-aos-delay="100">
+            <button onclick="switchCampus('k3')" id="tab-k3" class="campus-tab-btn px-4 py-2.5 rounded-xl text-xs font-bold whitespace-nowrap transition-all bg-emerald-600 text-white shadow-md flex items-center gap-2">
+                <i class="fa-solid fa-location-dot"></i>
+                <span>Kampus 3 (Terpadu)</span>
+            </button>
+            <button onclick="switchCampus('k1')" id="tab-k1" class="campus-tab-btn px-4 py-2.5 rounded-xl text-xs font-bold whitespace-nowrap transition-all bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-200 hover:bg-slate-200 dark:hover:bg-slate-700 border border-slate-200/80 dark:border-slate-700/80 flex items-center gap-2 backdrop-blur-md">
+                <i class="fa-solid fa-location-dot text-slate-400"></i>
+                <span>Kampus 1 (Pasca)</span>
+            </button>
+            <button onclick="switchCampus('k2')" id="tab-k2" class="campus-tab-btn px-4 py-2.5 rounded-xl text-xs font-bold whitespace-nowrap transition-all bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-200 hover:bg-slate-200 dark:hover:bg-slate-700 border border-slate-200/80 dark:border-slate-700/80 flex items-center gap-2 backdrop-blur-md">
+                <i class="fa-solid fa-location-dot text-slate-400"></i>
+                <span>Kampus 2 (Nakula)</span>
+            </button>
+        </div>
+
+        <!-- Layout Utama -->
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-8 items-start" data-aos="fade-up" data-aos-delay="200" data-aos-duration="700">
+            
+            <!-- DESKTOP ONLY: Sidebar Kartu Pilihan Kampus -->
+            <div class="hidden lg:flex flex-col space-y-4">
+                <button onclick="switchCampus('k3')" id="btn-k3" class="campus-btn w-full text-left p-5 rounded-2xl border transition-all bg-emerald-50/90 dark:bg-emerald-950/40 border-emerald-500 text-slate-900 dark:text-white shadow-sm backdrop-blur-md">
+                    <div class="font-bold text-base flex items-center justify-between">
+                        <span>Kampus Terpadu (Kampus 3)</span>
+                        <span class="text-[10px] font-bold px-2.5 py-1 bg-emerald-200 dark:bg-emerald-800 text-emerald-800 dark:text-emerald-100 rounded-md">Rektorat</span>
+                    </div>
+                    <p class="text-xs text-slate-500 dark:text-slate-400 mt-2">Jalan Lingkar Salatiga Km. 2, Pulutan, Sidorejo, Kota Salatiga.</p>
+                    <p class="text-[11px] text-emerald-600 dark:text-emerald-400 font-semibold mt-1">Rektorat, FTIK, Dakwah, FEBI, FST.</p>
+                </button>
+
+                <button onclick="switchCampus('k1')" id="btn-k1" class="campus-btn w-full text-left p-5 rounded-2xl border border-slate-200/80 dark:border-slate-800/80 hover:border-emerald-500 transition-all bg-white/70 dark:bg-slate-800/60 text-slate-900 dark:text-white backdrop-blur-md">
+                    <div class="font-bold text-base flex items-center justify-between">
+                        <span>Kampus 1 UIN Salatiga</span>
+                        <span class="text-[10px] font-bold px-2.5 py-1 bg-slate-200/80 dark:bg-slate-700/80 text-slate-700 dark:text-slate-300 rounded-md">Pascasarjana</span>
+                    </div>
+                    <p class="text-xs text-slate-500 dark:text-slate-400 mt-2">Jl. Tentara Pelajar No. 2, Kota Salatiga.</p>
+                    <p class="text-[11px] text-emerald-600 dark:text-emerald-400 font-semibold mt-1">Program Pascasarjana &amp; Unit Khusus.</p>
+                </button>
+
+                <button onclick="switchCampus('k2')" id="btn-k2" class="campus-btn w-full text-left p-5 rounded-2xl border border-slate-200/80 dark:border-slate-800/80 hover:border-emerald-500 transition-all bg-white/70 dark:bg-slate-800/60 text-slate-900 dark:text-white backdrop-blur-md">
+                    <div class="font-bold text-base flex items-center justify-between">
+                        <span>Kampus 2 UIN Salatiga</span>
+                        <span class="text-[10px] font-bold px-2.5 py-1 bg-slate-200/80 dark:bg-slate-700/80 text-slate-700 dark:text-slate-300 rounded-md">FASYA &amp; FUAH</span>
+                    </div>
+                    <p class="text-xs text-slate-500 dark:text-slate-400 mt-2">Jalan Nakula Sadewa V No. 9, Dukuh, Sidomukti, Kota Salatiga.</p>
+                    <p class="text-[11px] text-emerald-600 dark:text-emerald-400 font-semibold mt-1">Fakultas Syariah, FUAH, LKBH.</p>
+                </button>
+            </div>
+
+            <!-- Frame Container Peta Interactive -->
+            <div class="lg:col-span-2 bg-white/70 dark:bg-slate-800/60 rounded-2xl sm:rounded-3xl overflow-hidden border border-slate-200/80 dark:border-slate-700/80 shadow-lg flex flex-col backdrop-blur-md">
+                <div class="h-[280px] sm:h-[360px] lg:h-[400px] w-full relative">
+                    <iframe id="mapFrame" title="Peta lokasi kampus UIN Salatiga" class="w-full h-full border-0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.390498331155!2d110.47357882695312!3d-7.309952399999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a78633d53ebbf%3A0x18a4c33b6814677d!2sKampus%203%20Universitas%20Islam%20Negeri%20Salatiga!5e0!3m2!1sid!2sid!4v1792031714216!5m2!1sid!2sid" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                </div>
+
+                <div id="campusInfoMobile" class="p-4 bg-white/90 dark:bg-slate-800/90 border-t border-slate-200/80 dark:border-slate-700/80 block lg:hidden">
+                    <h4 id="mobileCampusTitle" class="font-extrabold text-slate-900 dark:text-white text-sm">Kampus Terpadu (Kampus 3)</h4>
+                    <p id="mobileCampusAddr" class="text-xs text-slate-500 dark:text-slate-400 mt-1">Jalan Lingkar Salatiga Km. 2, Pulutan, Sidorejo, Kota Salatiga.</p>
+                </div>
+            </div>
+        </div>
+
+        <p class="mt-6 text-[11px] text-slate-400 flex items-start gap-2 leading-relaxed" data-aos="fade-up" data-aos-delay="300">
+            <i class="fa-solid fa-circle-info text-emerald-500 mt-0.5 shrink-0"></i>
+            <span>Pembagian unit perkuliahan mengikuti panduan resmi UIN Salatiga. Gedung Fakultas Sains dan Teknologi (FST) sementara melaksanakan kegiatan akademik di Kampus 3 Terpadu.</span>
+        </p>
+    </div>
+</section>

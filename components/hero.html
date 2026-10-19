@@ -1,0 +1,59 @@
+<section id="hero" class="relative min-h-[calc(100vh-5rem)] flex items-center justify-center py-12 sm:py-16 overflow-hidden">
+    <!-- Animated Background Blobs -->
+    <div class="absolute inset-0 overflow-hidden pointer-events-none z-0">
+        <div class="absolute -top-40 -right-40 w-80 h-80 sm:w-96 sm:h-96 bg-emerald-400/20 dark:bg-emerald-500/10 rounded-full blur-3xl animate-[pulse_6s_ease-in-out_infinite]"></div>
+        <div class="absolute top-1/2 -left-20 w-72 h-72 sm:w-80 sm:h-80 bg-teal-400/20 dark:bg-teal-500/10 rounded-full blur-3xl"></div>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
+        <div class="text-center max-w-3xl mx-auto space-y-4 sm:space-y-5 flex flex-col items-center justify-center">
+            
+            <!-- Badge Sambutan -->
+            <div data-aos="fade-down" data-aos-duration="600" class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-emerald-50 dark:bg-emerald-950/60 border border-emerald-200 dark:border-emerald-800 text-emerald-700 dark:text-emerald-300 text-xs font-bold shadow-sm backdrop-blur-md">
+                <span class="flex h-2 w-2 rounded-full bg-emerald-500 animate-ping"></span>
+                <span>Pusat Informasi Terpadu Maba UIN Salatiga</span>
+            </div>
+
+            <!-- Judul Utama -->
+            <h1 data-aos="fade-up" data-aos-delay="100" data-aos-duration="700" class="text-2xl sm:text-4xl lg:text-5xl font-black text-slate-900 dark:text-white tracking-tight leading-tight">
+                Panduan Lengkap <br>
+                <span class="bg-gradient-to-r from-emerald-600 via-teal-500 to-emerald-400 bg-clip-text text-transparent">Mahasiswa Baru</span> Salatiga
+            </h1>
+
+            <!-- Deskripsi Teks -->
+            <p data-aos="fade-up" data-aos-delay="200" data-aos-duration="700" class="text-slate-600 dark:text-slate-300 text-xs sm:text-sm leading-relaxed max-w-2xl mx-auto">
+                Temukan informasi tempat tinggal, info UKT &amp; Beasiswa, direktori kuliner, hingga alur pra-perkuliahan lengkap untuk persiapan kuliahmu di UIN Salatiga.
+            </p>
+
+            <!-- WIDGET RINGKASAN PROGRESS MABA -->
+            <div data-aos="zoom-in" data-aos-delay="300" data-aos-duration="600" class="w-full max-w-lg mx-auto bg-white/80 dark:bg-slate-800/80 border border-emerald-500/30 dark:border-emerald-500/20 rounded-2xl p-3 sm:p-3.5 shadow-md backdrop-blur-md text-left flex items-center justify-between gap-3">
+                <div class="flex items-center gap-2.5 min-w-0 flex-1">
+                    <div class="w-9 h-9 rounded-xl bg-emerald-500 text-white flex items-center justify-center shrink-0 shadow-sm">
+                        <i class="fa-solid fa-list-check text-sm"></i>
+                    </div>
+                    <div class="min-w-0 flex-1">
+                        <span id="heroWidgetStatus" class="text-[10px] font-extrabold uppercase tracking-wider text-emerald-600 dark:text-emerald-400 block truncate">Progres Alur Maba</span>
+                        <h4 id="heroWidgetTitle" class="font-bold text-xs text-slate-900 dark:text-white truncate">Memuat progres...</h4>
+                    </div>
+                </div>
+                <a href="#alur" class="shrink-0 inline-flex items-center justify-center gap-1.5 bg-emerald-600 hover:bg-emerald-700 text-white text-[11px] font-bold px-3 py-2 rounded-xl transition-all shadow-sm active:scale-95 whitespace-nowrap">
+                    <span>Cek Alur</span>
+                    <i class="fa-solid fa-arrow-down text-[9px]"></i>
+                </a>
+            </div>
+
+            <!-- Tombol Aksi Cepat -->
+            <div data-aos="fade-up" data-aos-delay="400" data-aos-duration="700" class="flex flex-col sm:flex-row items-center justify-center gap-2.5 pt-1 w-full">
+                <a href="#directory" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white font-bold px-5 py-2.5 rounded-xl text-xs sm:text-sm transition-all shadow-lg shadow-emerald-600/25 active:scale-95">
+                    <i class="fa-solid fa-compass"></i>
+                    <span>Jelajahi Tempat Rekomendasi</span>
+                </a>
+                <a href="#campus-map" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-white/80 dark:bg-slate-800/80 hover:bg-slate-100 dark:hover:bg-slate-700/80 text-slate-700 dark:text-slate-200 border border-slate-200/80 dark:border-slate-700/80 font-bold px-5 py-2.5 rounded-xl text-xs sm:text-sm transition-all backdrop-blur-md active:scale-95">
+                    <i class="fa-solid fa-map-location-dot text-emerald-500"></i>
+                    <span>Peta Lokasi Kampus</span>
+                </a>
+            </div>
+
+        </div>
+    </div>
+</section>

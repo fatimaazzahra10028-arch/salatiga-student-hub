@@ -1,0 +1,77 @@
+<section id="alur" class="py-12 sm:py-16 border-t border-slate-200/80 dark:border-slate-800/80 relative overflow-hidden">
+    
+    <!-- Animated Background Blobs -->
+    <div class="absolute inset-0 overflow-hidden pointer-events-none z-0">
+        <div class="absolute top-1/3 -right-24 w-80 h-80 bg-emerald-400/10 dark:bg-emerald-500/10 rounded-full blur-3xl animate-[pulse_8s_ease-in-out_infinite]"></div>
+    </div>
+
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        
+        <!-- HEADER SEKSI -->
+        <div class="text-center max-w-2xl mx-auto mb-8" data-aos="fade-up" data-aos-duration="700">
+            <span class="text-xs font-bold uppercase tracking-wider text-emerald-600 dark:text-emerald-400">Dashboard Pra-Perkuliahan</span>
+            <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 dark:text-white mt-1">Alur Mahasiswa Baru</h2>
+            <p class="text-slate-500 dark:text-slate-400 text-xs sm:text-sm mt-2">Pantau dan kelola delapan langkah pra-perkuliahanmu. Gunakan filter untuk memfokuskan tugas yang belum selesai.</p>
+        </div>
+
+        <!-- WARNING BANNER -->
+        <div class="max-w-3xl mx-auto mb-6 p-3.5 sm:p-4 rounded-2xl border border-amber-300/80 dark:border-amber-800/80 bg-amber-50/80 dark:bg-amber-950/40 text-amber-900 dark:text-amber-200 text-xs sm:text-sm leading-relaxed flex gap-3 shadow-sm backdrop-blur-md" data-aos="fade-up" data-aos-delay="100" data-aos-duration="700">
+            <i class="fa-solid fa-triangle-exclamation text-amber-500 mt-0.5 shrink-0 text-sm sm:text-base"></i>
+            <p>Tanggal di bawah adalah <b>gambaran jadwal TA 2026/2027</b> sesuai pengumuman resmi. Jadwal dapat menyesuaikan, selalu cek pengumuman terbaru di <a href="https://uinsalatiga.ac.id/" target="_blank" rel="noopener" class="underline font-bold hover:text-emerald-600 transition-colors">uinsalatiga.ac.id</a>.</p>
+        </div>
+
+        <!-- DASHBOARD CONTROL: FILTER TAB & PROGRESS BAR -->
+        <div class="max-w-3xl mx-auto mb-8 space-y-4" data-aos="zoom-in" data-aos-delay="200" data-aos-duration="600">
+            
+            <!-- Tab Filter Status -->
+            <div class="flex items-center justify-between gap-2 flex-wrap bg-slate-100 dark:bg-slate-800/80 p-1.5 rounded-2xl border border-slate-200/80 dark:border-slate-700/80 backdrop-blur-md">
+                <div class="flex items-center gap-1 flex-wrap">
+                    <button onclick="setAlurFilter('all')" id="alur-filter-all" class="alur-filter-btn px-3.5 py-1.5 rounded-xl text-xs font-bold transition-all bg-emerald-600 text-white shadow-sm">
+                        Semua (<span id="countAll">8</span>)
+                    </button>
+                    <button onclick="setAlurFilter('pending')" id="alur-filter-pending" class="alur-filter-btn px-3.5 py-1.5 rounded-xl text-xs font-bold transition-all bg-transparent text-slate-600 dark:text-slate-300 hover:bg-slate-200/60 dark:hover:bg-slate-700/60">
+                        Belum Selesai (<span id="countPending">8</span>)
+                    </button>
+                    <button onclick="setAlurFilter('completed')" id="alur-filter-completed" class="alur-filter-btn px-3.5 py-1.5 rounded-xl text-xs font-bold transition-all bg-transparent text-slate-600 dark:text-slate-300 hover:bg-slate-200/60 dark:hover:bg-slate-700/60">
+                        Selesai (<span id="countCompleted">0</span>)
+                    </button>
+                </div>
+
+                <button id="alurResetBtn" type="button" class="text-slate-400 hover:text-rose-500 transition-colors px-3 py-1.5 text-xs font-bold flex items-center gap-1.5 ml-auto">
+                    <i class="fa-solid fa-rotate-left text-[10px]"></i> Reset
+                </button>
+            </div>
+
+            <!-- Progress Bar -->
+            <div class="p-4 rounded-2xl bg-white/70 dark:bg-slate-800/60 border border-slate-200/80 dark:border-slate-700/80 shadow-sm backdrop-blur-md">
+                <div class="flex items-center justify-between text-xs font-extrabold mb-2">
+                    <span id="alurProgressText" class="text-slate-800 dark:text-slate-200">0 dari 8 langkah selesai</span>
+                    <span id="alurProgressPercent" class="text-emerald-600 dark:text-emerald-400 font-extrabold">0%</span>
+                </div>
+                <div class="h-2.5 rounded-full bg-slate-200/80 dark:bg-slate-700/80 overflow-hidden">
+                    <div id="alurProgressBar" class="h-full bg-emerald-500 rounded-full transition-all duration-500" style="width: 0%"></div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- LIST CARDS: Dynamic Filtered Content (1 Kolom pada Mobile & Tablet, 2 Kolom pada Desktop >= 1024px) -->
+        <ol id="alurList" class="grid grid-cols-1 lg:grid-cols-2 gap-3.5 sm:gap-4 relative w-full" data-aos="fade-up" data-aos-delay="300" data-aos-duration="700">
+            <!-- Dynamic Content Rendered by renderAlur() di js/app.js -->
+        </ol>
+
+        <!-- EMPTY STATE (Jika tab filter tidak ada itemnya) -->
+        <div id="alurEmptyState" class="hidden text-center py-12 bg-white/50 dark:bg-slate-800/40 rounded-2xl border border-dashed border-slate-300 dark:border-slate-700 max-w-3xl mx-auto">
+            <i class="fa-solid fa-circle-check text-4xl text-emerald-500 mb-2"></i>
+            <h4 class="font-bold text-slate-800 dark:text-white text-sm">Tidak Ada Langkah dalam Kategori Ini</h4>
+            <p id="alurEmptyMsg" class="text-xs text-slate-400 mt-1">Semua tugas pra-perkuliahan telah kamu selesaikan!</p>
+        </div>
+
+        <!-- FOOTNOTE SUMBER -->
+        <p class="mt-8 text-[11px] text-slate-400 flex items-start gap-1.5 leading-relaxed max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="400">
+            <i class="fa-solid fa-file-circle-check mt-0.5 text-emerald-500 shrink-0"></i>
+            <span>Sumber: Pengumuman Rektor UIN Salatiga Nomor B-1047/Un.29/R/PP.00.1/07/2026 tentang Teknis dan Jadwal Kegiatan Praperkuliahan Mahasiswa Baru TA 2026/2027. Terakhir dicek 16 Oktober 2026.
+            <a href="https://placementtest.uinsalatiga.ac.id/public/templatev1/docs/jadwal-praperkuliahan-maba-2026-2027.pdf" target="_blank" rel="noopener" class="underline font-medium hover:text-emerald-500 transition-colors">Buka dokumen asli</a>.</span>
+        </p>
+    </div>
+</section>
