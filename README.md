@@ -22,7 +22,7 @@
 
 <br>
 
-[🌐 **Lihat Demo**](https://salatiga-student-hub.netlify.app) &nbsp;•&nbsp; [💻 **Repository**](https://github.com/fatimaazzahra10028-arch/salatiga-student-hub) &nbsp;•&nbsp; [🏛️ **Situs Resmi UIN Salatiga**](https://uinsalatiga.ac.id/)
+[🌐 **Lihat Demo**](https://salatiga-student-hub.fatimaazzahra10028.workers.dev/) &nbsp;•&nbsp; [💻 **Repository**](https://github.com/fatimaazzahra10028-arch/salatiga-student-hub) &nbsp;•&nbsp; [🏛️ **Situs Resmi UIN Salatiga**](https://uinsalatiga.ac.id/)
 
 </div>
 
