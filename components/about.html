@@ -1,95 +1,123 @@
-<section id="about" class="py-12 sm:py-16 border-t border-slate-200/80 dark:border-slate-800/80 relative overflow-hidden">
+<section id="about" class="py-10 sm:py-16 border-t border-slate-200/80 dark:border-slate-800/80 relative overflow-hidden">
 
-    <!-- Animated Subtle Ambient Glow -->
+    <!-- Ambient Glow Fluid -->
     <div class="absolute inset-0 overflow-hidden pointer-events-none z-0">
-        <div class="absolute -bottom-24 -left-24 w-80 h-80 bg-teal-400/10 dark:bg-teal-500/10 rounded-full blur-3xl animate-[pulse_8s_ease-in-out_infinite]"></div>
+        <div class="absolute -bottom-20 -left-20 w-72 h-72 sm:w-96 sm:h-96 bg-emerald-500/10 dark:bg-emerald-500/15 rounded-full blur-3xl animate-[pulse_6s_ease-in-out_infinite]"></div>
+        <div class="absolute -top-20 -right-20 w-72 h-72 sm:w-96 sm:h-96 bg-teal-500/10 dark:bg-teal-500/10 rounded-full blur-3xl"></div>
     </div>
 
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
 
-        <!-- HEADER SEKSI RINGKAS -->
-        <div class="text-center max-w-2xl mx-auto mb-10" data-aos="fade-up" data-aos-duration="700">
-            <span class="text-xs font-bold uppercase tracking-wider text-emerald-600 dark:text-emerald-400">Pusat Navigasi Maba</span>
-            <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 dark:text-white mt-1">Mengapa Salatiga Student Hub?</h2>
-            <p class="text-slate-500 dark:text-slate-400 text-xs sm:text-sm mt-2">Semua informasi penting mahasiswa baru UIN Salatiga dirangkum ringkas dalam satu tempat—tanpa ribet dan hemat waktu.</p>
+        <!-- HEADER SEKSI -->
+        <div class="text-center max-w-2xl mx-auto mb-8 sm:mb-12" data-aos="fade-up" data-aos-duration="700">
+            <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[10px] sm:text-xs font-bold uppercase tracking-wider text-emerald-700 dark:text-emerald-300 bg-emerald-100/80 dark:bg-emerald-950/80 border border-emerald-200/60 dark:border-emerald-800/60 backdrop-blur-md">
+                <i class="fa-solid fa-compass text-emerald-500"></i> Pusat Navigasi Maba
+            </span>
+            <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 dark:text-white mt-3 tracking-tight">
+                Mengapa <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-600 to-teal-500">Salatiga Student Hub?</span>
+            </h2>
+            <p class="text-slate-600 dark:text-slate-400 text-xs sm:text-sm mt-2.5 leading-relaxed px-2">
+                Semua informasi penting mahasiswa baru UIN Salatiga dirangkum ringkas dalam satu tempat—tanpa ribet dan hemat waktu.
+            </p>
         </div>
 
-        <!-- 3 KARTU FITUR UTAMA (VISUAL & RINGKAS) -->
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6 mb-8" data-aos="fade-up" data-aos-duration="700" data-aos-delay="100">
+        <!-- 3 KARTU FITUR UTAMA (Tautan Mengarah ke Section Masing-masing) -->
+        <div class="flex md:grid md:grid-cols-3 gap-3.5 sm:gap-6 overflow-x-auto snap-x snap-mandatory pb-4 md:pb-0 -mx-4 px-4 md:mx-0 md:px-0 no-scrollbar mb-8 sm:mb-10" data-aos="fade-up" data-aos-duration="700" data-aos-delay="100">
             
-            <!-- Fitur 1 -->
-            <div class="p-5 rounded-2xl bg-white/70 dark:bg-slate-800/60 border border-slate-200/80 dark:border-slate-700/80 backdrop-blur-md hover:border-emerald-500/50 hover:shadow-lg transition-all duration-300">
-                <div class="w-10 h-10 rounded-xl bg-emerald-100 dark:bg-emerald-950/80 text-emerald-600 dark:text-emerald-400 flex items-center justify-center text-lg mb-3 shadow-inner">
-                    <i class="fa-solid fa-list-check"></i>
+            <!-- Fitur 1: Mengarah ke #alur -->
+            <a href="#alur" class="group snap-center shrink-0 w-[82vw] sm:w-[320px] md:w-auto p-5 rounded-2xl bg-white/80 dark:bg-slate-800/70 border border-slate-200/80 dark:border-slate-700/80 backdrop-blur-md hover:border-emerald-500/50 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between block">
+                <div>
+                    <div class="w-11 h-11 rounded-xl bg-gradient-to-br from-emerald-500 to-teal-600 text-white flex items-center justify-center text-lg mb-4 shadow-md shadow-emerald-500/20 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-list-check"></i>
+                    </div>
+                    <h3 class="font-extrabold text-slate-900 dark:text-white text-sm sm:text-base mb-1.5 group-hover:text-emerald-600 dark:group-hover:text-emerald-400 transition-colors">Panduan Alur Maba</h3>
+                    <p class="text-slate-500 dark:text-slate-400 text-xs leading-relaxed">8 tahapan pra-perkuliahan lengkap dengan pelacak progres mandiri.</p>
                 </div>
-                <h3 class="font-extrabold text-slate-900 dark:text-white text-sm mb-1">Panduan Alur Maba</h3>
-                <p class="text-slate-500 dark:text-slate-400 text-xs leading-relaxed">8 tahapan pra-perkuliahan lengkap dengan pelacak progres mandiri.</p>
-            </div>
+                <div class="mt-4 pt-3 border-t border-slate-100 dark:border-slate-700/50 flex items-center text-[11px] font-bold text-emerald-600 dark:text-emerald-400">
+                    <span>Lihat tahapan</span>
+                    <i class="fa-solid fa-arrow-right ml-1.5 text-[10px] group-hover:translate-x-1 transition-transform"></i>
+                </div>
+            </a>
 
-            <!-- Fitur 2 -->
-            <div class="p-5 rounded-2xl bg-white/70 dark:bg-slate-800/60 border border-slate-200/80 dark:border-slate-700/80 backdrop-blur-md hover:border-emerald-500/50 hover:shadow-lg transition-all duration-300">
-                <div class="w-10 h-10 rounded-xl bg-teal-100 dark:bg-teal-950/80 text-teal-600 dark:text-teal-400 flex items-center justify-center text-lg mb-3 shadow-inner">
-                    <i class="fa-solid fa-map-location-dot"></i>
+            <!-- Fitur 2: Mengarah ke #campus-map -->
+            <a href="#campus-map" class="group snap-center shrink-0 w-[82vw] sm:w-[320px] md:w-auto p-5 rounded-2xl bg-white/80 dark:bg-slate-800/70 border border-slate-200/80 dark:border-slate-700/80 backdrop-blur-md hover:border-teal-500/50 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between block">
+                <div>
+                    <div class="w-11 h-11 rounded-xl bg-gradient-to-br from-teal-500 to-cyan-600 text-white flex items-center justify-center text-lg mb-4 shadow-md shadow-teal-500/20 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-map-location-dot"></i>
+                    </div>
+                    <h3 class="font-extrabold text-slate-900 dark:text-white text-sm sm:text-base mb-1.5 group-hover:text-teal-600 dark:group-hover:text-teal-400 transition-colors">Navigasi Kampus</h3>
+                    <p class="text-slate-500 dark:text-slate-400 text-xs leading-relaxed">Peta 3 lokasi kampus UIN Salatiga serta rincian 6 fakultas &amp; 28 prodi.</p>
                 </div>
-                <h3 class="font-extrabold text-slate-900 dark:text-white text-sm mb-1">Navigasi Kampus</h3>
-                <p class="text-slate-500 dark:text-slate-400 text-xs leading-relaxed">Peta 3 lokasi kampus UIN Salatiga serta rincian 6 fakultas & 28 prodi.</p>
-            </div>
+                <div class="mt-4 pt-3 border-t border-slate-100 dark:border-slate-700/50 flex items-center text-[11px] font-bold text-teal-600 dark:text-teal-400">
+                    <span>Jelajahi lokasi</span>
+                    <i class="fa-solid fa-arrow-right ml-1.5 text-[10px] group-hover:translate-x-1 transition-transform"></i>
+                </div>
+            </a>
 
-            <!-- Fitur 3 -->
-            <div class="p-5 rounded-2xl bg-white/70 dark:bg-slate-800/60 border border-slate-200/80 dark:border-slate-700/80 backdrop-blur-md hover:border-emerald-500/50 hover:shadow-lg transition-all duration-300">
-                <div class="w-10 h-10 rounded-xl bg-amber-100 dark:bg-amber-950/80 text-amber-600 dark:text-amber-400 flex items-center justify-center text-lg mb-3 shadow-inner">
-                    <i class="fa-solid fa-compass"></i>
+            <!-- Fitur 3: Mengarah ke #directory -->
+            <a href="#directory" class="group snap-center shrink-0 w-[82vw] sm:w-[320px] md:w-auto p-5 rounded-2xl bg-white/80 dark:bg-slate-800/70 border border-slate-200/80 dark:border-slate-700/80 backdrop-blur-md hover:border-amber-500/50 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between block">
+                <div>
+                    <div class="w-11 h-11 rounded-xl bg-gradient-to-br from-amber-500 to-orange-500 text-white flex items-center justify-center text-lg mb-4 shadow-md shadow-amber-500/20 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-compass"></i>
+                    </div>
+                    <h3 class="font-extrabold text-slate-900 dark:text-white text-sm sm:text-base mb-1.5 group-hover:text-amber-600 dark:group-hover:text-amber-400 transition-colors">Direktori Salatiga</h3>
+                    <p class="text-slate-500 dark:text-slate-400 text-xs leading-relaxed">Rekomendasi kost, tempat nugas (cafe), dan percetakan terdekat dari kampus.</p>
                 </div>
-                <h3 class="font-extrabold text-slate-900 dark:text-white text-sm mb-1">Direktori Salatiga</h3>
-                <p class="text-slate-500 dark:text-slate-400 text-xs leading-relaxed">Rekomendasi kost, tempat nugas (cafe), dan percetakan terdekat dari kampus.</p>
-            </div>
+                <div class="mt-4 pt-3 border-t border-slate-100 dark:border-slate-700/50 flex items-center text-[11px] font-bold text-amber-600 dark:text-amber-400">
+                    <span>Cari rekomendasi</span>
+                    <i class="fa-solid fa-arrow-right ml-1.5 text-[10px] group-hover:translate-x-1 transition-transform"></i>
+                </div>
+            </a>
+
         </div>
 
-        <!-- GRID BOTTOM: STATISTIK RINGKAS + BADGE & DISCLAiMER -->
-        <div class="grid grid-cols-1 lg:grid-cols-5 gap-4 sm:gap-6 items-center">
+        <!-- GRID BOTTOM: STATISTIK + KARTU PEMBUAT -->
+        <div class="grid grid-cols-1 lg:grid-cols-5 gap-4 sm:gap-6 items-stretch">
             
-            <!-- BARIS STATISTIK (HIGHLIGHT ANGKA) -->
-            <div class="lg:col-span-3 grid grid-cols-2 sm:grid-cols-4 gap-3" data-aos="fade-right" data-aos-duration="700" data-aos-delay="150">
-                <div class="p-3.5 rounded-2xl bg-white/70 dark:bg-slate-800/60 border border-slate-200/80 dark:border-slate-700/80 backdrop-blur-md text-center">
-                    <div class="text-xl sm:text-2xl font-black text-emerald-600 dark:text-emerald-400">8</div>
-                    <div class="text-[10px] sm:text-[11px] font-semibold text-slate-500 dark:text-slate-400 mt-0.5">Langkah Maba</div>
-                </div>
-                <div class="p-3.5 rounded-2xl bg-white/70 dark:bg-slate-800/60 border border-slate-200/80 dark:border-slate-700/80 backdrop-blur-md text-center">
-                    <div class="text-xl sm:text-2xl font-black text-emerald-600 dark:text-emerald-400">6</div>
-                    <div class="text-[10px] sm:text-[11px] font-semibold text-slate-500 dark:text-slate-400 mt-0.5">Fakultas</div>
-                </div>
-                <div class="p-3.5 rounded-2xl bg-white/70 dark:bg-slate-800/60 border border-slate-200/80 dark:border-slate-700/80 backdrop-blur-md text-center">
-                    <div class="text-xl sm:text-2xl font-black text-emerald-600 dark:text-emerald-400">28</div>
-                    <div class="text-[10px] sm:text-[11px] font-semibold text-slate-500 dark:text-slate-400 mt-0.5">Prodi S1</div>
-                </div>
-                <div class="p-3.5 rounded-2xl bg-white/70 dark:bg-slate-800/60 border border-slate-200/80 dark:border-slate-700/80 backdrop-blur-md text-center">
-                    <div class="text-xl sm:text-2xl font-black text-emerald-600 dark:text-emerald-400">3</div>
-                    <div class="text-[10px] sm:text-[11px] font-semibold text-slate-500 dark:text-slate-400 mt-0.5">Kampus</div>
-                </div>
+            <!-- BARIS STATISTIK -->
+            <div class="lg:col-span-3 grid grid-cols-2 sm:grid-cols-4 gap-2.5 sm:gap-3" data-aos="fade-right" data-aos-duration="700" data-aos-delay="150">
+                <a href="#alur" class="p-3.5 rounded-2xl bg-white/80 dark:bg-slate-800/70 border border-slate-200/80 dark:border-slate-700/80 backdrop-blur-md text-center hover:border-emerald-500/40 transition-all hover:scale-105 block">
+                    <div class="text-2xl sm:text-3xl font-black text-transparent bg-clip-text bg-gradient-to-r from-emerald-600 to-teal-500">8</div>
+                    <div class="text-[10px] sm:text-[11px] font-bold text-slate-600 dark:text-slate-300 mt-0.5">Langkah Maba</div>
+                </a>
+                <a href="#fakultas" class="p-3.5 rounded-2xl bg-white/80 dark:bg-slate-800/70 border border-slate-200/80 dark:border-slate-700/80 backdrop-blur-md text-center hover:border-emerald-500/40 transition-all hover:scale-105 block">
+                    <div class="text-2xl sm:text-3xl font-black text-transparent bg-clip-text bg-gradient-to-r from-emerald-600 to-teal-500">6</div>
+                    <div class="text-[10px] sm:text-[11px] font-bold text-slate-600 dark:text-slate-300 mt-0.5">Fakultas</div>
+                </a>
+                <a href="#fakultas" class="p-3.5 rounded-2xl bg-white/80 dark:bg-slate-800/70 border border-slate-200/80 dark:border-slate-700/80 backdrop-blur-md text-center hover:border-emerald-500/40 transition-all hover:scale-105 block">
+                    <div class="text-2xl sm:text-3xl font-black text-transparent bg-clip-text bg-gradient-to-r from-emerald-600 to-teal-500">28</div>
+                    <div class="text-[10px] sm:text-[11px] font-bold text-slate-600 dark:text-slate-300 mt-0.5">Prodi S1</div>
+                </a>
+                <a href="#campus-map" class="p-3.5 rounded-2xl bg-white/80 dark:bg-slate-800/70 border border-slate-200/80 dark:border-slate-700/80 backdrop-blur-md text-center hover:border-emerald-500/40 transition-all hover:scale-105 block">
+                    <div class="text-2xl sm:text-3xl font-black text-transparent bg-clip-text bg-gradient-to-r from-emerald-600 to-teal-500">3</div>
+                    <div class="text-[10px] sm:text-[11px] font-bold text-slate-600 dark:text-slate-300 mt-0.5">Kampus</div>
+                </a>
             </div>
 
-            <!-- KARTU PEMBUAT & DOKUMENTASI RESMI -->
-            <div class="lg:col-span-2 p-4 sm:p-5 rounded-2xl bg-gradient-to-r from-emerald-600/10 via-teal-500/10 to-transparent border border-emerald-500/30 dark:border-emerald-500/20 backdrop-blur-md flex items-center justify-between gap-3" data-aos="fade-left" data-aos-duration="700" data-aos-delay="200">
+            <!-- KARTU PEMBUAT -->
+            <div class="lg:col-span-2 p-4 sm:p-4.5 rounded-2xl bg-gradient-to-r from-emerald-500/10 via-teal-500/10 to-transparent border border-emerald-500/30 dark:border-emerald-500/20 backdrop-blur-md flex items-center justify-between gap-3" data-aos="fade-left" data-aos-duration="700" data-aos-delay="200">
                 <div class="flex items-center gap-3 min-w-0">
-                    <div class="w-10 h-10 rounded-xl bg-emerald-500 text-white flex items-center justify-center text-base shrink-0 shadow-md shadow-emerald-500/30">
+                    <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-emerald-600 to-teal-500 text-white flex items-center justify-center text-sm shrink-0 shadow-md shadow-emerald-500/30">
                         <i class="fa-solid fa-code"></i>
                     </div>
                     <div class="min-w-0">
-                        <h4 class="font-bold text-slate-900 dark:text-white text-xs sm:text-sm truncate">Dibuat oleh Fatima Azzahra</h4>
+                        <span class="block text-[9px] font-bold uppercase tracking-wider text-emerald-600 dark:text-emerald-400">Developer</span>
+                        <h4 class="font-extrabold text-slate-900 dark:text-white text-xs sm:text-sm truncate">Fatima Azzahra</h4>
                         <p class="text-slate-500 dark:text-slate-400 text-[10px] sm:text-[11px] truncate">INTECHFEST 2026 Web Competition</p>
                     </div>
                 </div>
-                <a href="#alur" class="px-3 py-2 bg-emerald-600 hover:bg-emerald-700 text-white font-bold rounded-xl text-xs shrink-0 transition-all active:scale-95 shadow-md">
-                    Coba Sekarang
+                <a href="#alur" class="px-3.5 py-2.5 bg-emerald-600 hover:bg-emerald-700 active:scale-95 text-white font-bold rounded-xl text-xs shrink-0 transition-all shadow-md shadow-emerald-600/20 flex items-center gap-1.5">
+                    <span>Mulai</span>
+                    <i class="fa-solid fa-chevron-right text-[10px]"></i>
                 </a>
             </div>
 
         </div>
 
-        <!-- NOTICE BANNER KECIL (FOOTNOTE) -->
-        <p class="text-center text-[11px] text-slate-400 dark:text-slate-500 mt-8 flex items-center justify-center gap-1.5 leading-relaxed" data-aos="fade-up" data-aos-delay="250">
+        <!-- FOOTNOTE -->
+        <p class="text-center text-[10px] sm:text-[11px] text-slate-400 dark:text-slate-500 mt-6 sm:mt-8 flex items-center justify-center gap-1.5 leading-relaxed px-4" data-aos="fade-up" data-aos-delay="250">
             <i class="fa-solid fa-circle-info text-emerald-500 shrink-0"></i>
-            <span>Bukan situs resmi UIN Salatiga. Data akademik mengacu pada Pengumuman Rektor No. B-1047/Un.29/R/PP.00.1/07/2026.</span>
+            <span>Bukan situs resmi UIN Salatiga. Data mengacu pada Pengumuman Rektor No. B-1047/Un.29/R/PP.00.1/07/2026.</span>
         </p>
 
     </div>
